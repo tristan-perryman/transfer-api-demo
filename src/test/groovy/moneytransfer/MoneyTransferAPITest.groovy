@@ -317,7 +317,7 @@ class MoneyTransferAPITest extends Specification {
 
         then:
         response.then()
-                .statusCode(404)
+                .statusCode(400)
                 .body("errorCode", is("INVALID_ACCOUNT"))
         testDBHelper.getAccountBalance(destinationAccount, currency).toBlocking().value() == new BigDecimal("5")
     }
