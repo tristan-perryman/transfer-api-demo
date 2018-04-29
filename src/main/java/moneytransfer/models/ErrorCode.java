@@ -1,0 +1,10 @@
+package moneytransfer.models;
+
+public enum ErrorCode {
+    INSUFFICIENT_ACCOUNT_BALANCE,
+    INVALID_ACCOUNT,
+    BAD_REQUEST,
+    MONEY_TOO_MANY_DECIMAL_PLACES,
+    MONEY_OVERFLOW,
+    INTERNAL_SERVER_ERROR
+}
